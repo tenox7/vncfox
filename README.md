@@ -1,5 +1,7 @@
 # Web Browser with a VNC Server in a Docker Container
 
+Currently using Firefox-ESR but this may change.
+
 ## Running
 
 ```sh
@@ -9,4 +11,4 @@ docker run -d --rm \
     tenox7/vnc4bro:latest
 ```
 
-VNC Password `vnc4bro`.
+VNC Password is: `vnc4bro`
