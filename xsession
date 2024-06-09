@@ -1,0 +1,2 @@
+ratpoison&
+firefox-esr&

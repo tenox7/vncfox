@@ -1,0 +1,4 @@
+#!/bin/sh
+export USER=root
+tightvncserver :0
+sleep inf
