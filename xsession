@@ -1,2 +1,2 @@
 ratpoison&
-firefox-esr&
+while true; do firefox-esr; done
