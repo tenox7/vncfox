@@ -1,5 +1,6 @@
 FROM ubuntu
 EXPOSE 5900:5900
+VOLUME ["/root/.mozilla"]
 RUN apt update -y
 RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:mozillateam/ppa

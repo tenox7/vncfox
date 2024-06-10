@@ -14,3 +14,15 @@ docker run -d --rm \
 ```
 
 VNC Password is: `vnc4bro`
+
+If you want the Firefox profile to persist between sessions mount `/root/.mozilla` as a volume:
+
+```sh
+docker run -d --rm \
+    --name vnc4bro \
+    -v ~/.vnc4bro:/root/.mozilla
+    -p 5900:5900 \
+    tenox7/vnc4bro:latest
+```
+
+
