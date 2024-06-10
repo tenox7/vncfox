@@ -1,4 +1,4 @@
 #!/bin/sh
-export USER=root
+export USER=vncfox
 tightvncserver :0
 sleep inf
