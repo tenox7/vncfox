@@ -25,3 +25,8 @@ docker run -d \
 ```
 
 
+## VNC Client
+It's recommended to use Tight or Tiger VNC client to reduce CPU usage and improve performance.
+
+A collection of Tight VNC ports is available here:
+http://osarchive.org/apps/vnc/tight/ports
