@@ -24,6 +24,7 @@ docker run -d \
     tenox7/vncfox:latest
 ```
 
+This container is dual architecture, AMD64 and ARM64, it can be run on Mac host with Apple Silicon, Raspberry PI, etc.
 
 ## VNC Client
 It's recommended to use Tight or Tiger VNC client to reduce CPU usage and improve performance.
