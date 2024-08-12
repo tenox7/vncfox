@@ -3,7 +3,7 @@
 
 ## Running
 
-https://hub.docker.com/repository/docker/tenox7/vncfox/
+Docker hub: https://hub.docker.com/r/tenox7/vncfox
 
 ```sh
 docker run -d \
