@@ -24,6 +24,8 @@ docker run -d \
     tenox7/vncfox:latest
 ```
 
+I also typically bind mount a folder exported via NFS to `/home/vncfox/Downloads`.
+
 This container is dual architecture, AMD64 and ARM64, it can be run on Mac host with Apple Silicon, Raspberry PI, etc.
 
 ## VNC Client
@@ -37,3 +39,4 @@ http://osarchive.org/apps/vnc/tight/ports
 - F8  - opens TightVNC menu, clipboard transfer etc
 - F11 - FireFox full screen mode
 - ^tc - opens xterm
+
