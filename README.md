@@ -31,3 +31,9 @@ It's recommended to use Tight or Tiger VNC client to reduce CPU usage and improv
 
 A collection of Tight VNC ports is available here:
 http://osarchive.org/apps/vnc/tight/ports
+
+## Useful keyboard shortcuts
+
+- F8  - opens TightVNC menu, clipboard transfer etc
+- F11 - FireFox full screen mode
+- ^tc - opens xterm
