@@ -9,6 +9,7 @@ Docker hub: https://hub.docker.com/r/tenox7/vncfox
 docker run -d \
     --name vncfox \
     -p 5900:5900 \
+    --rm \
     tenox7/vncfox:latest
 ```
 
@@ -21,6 +22,7 @@ docker run -d \
     --name vncfox \
     -v ~/.vncfox:/home/vncfox/.mozilla
     -p 5900:5900 \
+    --rm \
     tenox7/vncfox:latest
 ```
 
@@ -38,5 +40,4 @@ http://osarchive.org/apps/vnc/tight/ports
 
 - F8  - opens TightVNC menu, clipboard transfer etc
 - F11 - FireFox full screen mode
-- ^tc - opens xterm
 
