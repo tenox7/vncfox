@@ -8,3 +8,4 @@ clean:
 	docker rmi -f tenox7/vncfox:latest
 	docker builder prune -a -f
 	docker buildx prune -a -f
+
