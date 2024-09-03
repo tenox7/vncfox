@@ -38,3 +38,11 @@ http://osarchive.org/apps/vnc/tight/ports
 - F8  - opens TightVNC menu, clipboard transfer etc
 - F11 - FireFox full screen mode
 
+## Firefox Customization
+
+Better scrollbars:
+
+```text
+about:config
+widget.non-native-theme.scrollbar.style = 1
+```
