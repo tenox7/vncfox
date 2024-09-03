@@ -14,4 +14,6 @@ USER vncfox
 RUN sh -c 'echo vncfox | vncpasswd -f > /home/vncfox/.vnc/passwd'
 RUN chmod 600 /home/vncfox/.vnc/passwd
 ENV USER=vncfox
+ENV WIDTH=1024
+ENV HEIGHT=768
 ENTRYPOINT ["/init"]

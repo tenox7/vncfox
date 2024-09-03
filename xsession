@@ -1,1 +1,1 @@
-while true; do firefox-esr --width 1024 --height 768; done
+while true; do firefox-esr --width $WIDTH --height $HEIGHT; done

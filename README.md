@@ -11,7 +11,11 @@ docker run -d \
     tenox7/vncfox:latest
 ```
 
+This container is dual architecture, AMD64 and ARM64, it can be run on Mac host with Apple Silicon, Raspberry PI, etc.
+
 VNC Password is: `vncfox`
+
+## Profiles
 
 If you want the profile to persist between sessions, mount `/home/vncfox/.mozilla` as a volume. 
 Either create a persistent Docker volume or bind mount to a folder on the host.
@@ -27,7 +31,21 @@ docker run -d \
 
 I also typically bind mount a folder exported via NFS to `/home/vncfox/Downloads`.
 
-This container is dual architecture, AMD64 and ARM64, it can be run on Mac host with Apple Silicon, Raspberry PI, etc.
+## Resolution
+
+By default resolution of 1024x768 is used because I mostly work on workstations with 1280x1024 and I was a smaller window.
+However you can set custom resolution by using `WIDTH` and `HEIGHT` env variables.
+
+```sh
+docker volume create vncfox
+docker run -d \
+    --name vncfox \
+    -v vncfox:/home/vncfox/.mozilla
+    -p 5900:5900 \
+    -e WIDTH=1600 -e HEIGHT=1200 \
+    tenox7/vncfox:latest
+```
+
 
 ## VNC Client
 It's recommended to use Tight or Tiger VNC client to reduce CPU usage and improve performance.
