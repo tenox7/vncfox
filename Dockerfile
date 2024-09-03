@@ -6,6 +6,7 @@ RUN add-apt-repository ppa:mozillateam/ppa
 RUN apt install -y firefox-esr tightvncserver
 RUN useradd -m vncfox
 ADD xsession /home/vncfox/.xsession
+RUN mkdir /home/vncfox/.mozilla
 RUN chown -R vncfox /home/vncfox
 ADD init /init
 USER vncfox

@@ -13,12 +13,14 @@ docker run -d \
 
 VNC Password is: `vncfox`
 
-If you want the profile to persist between sessions, mount `/home/vncfox/.mozilla` as a volume:
+If you want the profile to persist between sessions, mount `/home/vncfox/.mozilla` as a volume. 
+Either create a persistent Docker volume or bind mount to a folder on the host.
 
 ```sh
+docker volume create vncfox
 docker run -d \
     --name vncfox \
-    -v ~/.vncfox:/home/vncfox/.mozilla
+    -v vncfox:/home/vncfox/.mozilla
     -p 5900:5900 \
     tenox7/vncfox:latest
 ```
