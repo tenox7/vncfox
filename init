@@ -1,3 +1,5 @@
-#!/bin/sh
-tightvncserver :0
-sleep inf
+#!/bin/bash
+while true; do
+	pgrep Xtightvnc >/dev/null || { rm -f /tmp/.X0-lock /tmp/.X11-unix/X0; tightvncserver :0; }
+	sleep 10
+done

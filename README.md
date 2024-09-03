@@ -1,6 +1,5 @@
 # Firefox via VNC as a Docker Container
 
-
 ## Running
 
 Docker hub: https://hub.docker.com/r/tenox7/vncfox
@@ -9,7 +8,6 @@ Docker hub: https://hub.docker.com/r/tenox7/vncfox
 docker run -d \
     --name vncfox \
     -p 5900:5900 \
-    --rm \
     tenox7/vncfox:latest
 ```
 
@@ -22,7 +20,6 @@ docker run -d \
     --name vncfox \
     -v ~/.vncfox:/home/vncfox/.mozilla
     -p 5900:5900 \
-    --rm \
     tenox7/vncfox:latest
 ```
 
