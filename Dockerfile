@@ -3,7 +3,7 @@ EXPOSE 5900:5900
 RUN apt update -y
 RUN apt install -y software-properties-common
 RUN add-apt-repository ppa:mozillateam/ppa
-RUN apt install -y firefox-esr tightvncserver ratpoison
+RUN apt install -y firefox-esr tightvncserver
 RUN useradd -m vncfox
 ADD xsession /home/vncfox/.xsession
 RUN chown -R vncfox /home/vncfox
