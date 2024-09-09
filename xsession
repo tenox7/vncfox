@@ -1,1 +1,2 @@
-while true; do firefox-esr --width $WIDTH --height $HEIGHT; done
+ratpoison&
+while true; do firefox-esr ; done
