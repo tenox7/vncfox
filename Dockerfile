@@ -1,7 +1,7 @@
 FROM docker.io/alpine
 EXPOSE 5900:5900
 RUN apk update 
-# Add in Firefox, Ratpoison (for a minimal VM), and enough fonts to handle
+# Add in Firefox ESR, Ratpoison (for a minimal VM), and enough fonts to handle
 # nearly all web-based applications. Traditional X11 fonts have been added
 # to support xterm. 
 RUN apk add bash font-terminus font-inconsolata font-dejavu font-noto-all \
@@ -13,7 +13,7 @@ RUN apk add bash font-terminus font-inconsolata font-dejavu font-noto-all \
             font-micro-misc font-misc-misc font-mutt-misc \
             font-schumacher-misc font-sony-misc font-sun-misc font-unifont \
             font-bitstream-100dpi font-bitstream-75dpi font-bitstream-type1 \
-            xterm firefox ratpoison tigervnc shadow
+            xterm firefox-esr ratpoison tigervnc shadow
 RUN useradd -m vncfox
 ADD xinitrc /home/vncfox/.xinitrc
 RUN chmod +x /home/vncfox/.xinitrc
