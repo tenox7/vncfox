@@ -39,7 +39,7 @@ I typically bind mount a folder exported via NFS to `/home/vncfox/Downloads`.
 
 ## Resolution
 
-TightVNC 1.3 doesn't support remote resize. Only a fixed resolution is allowed. The default resolution is 1024x768. This is because I mostly work on workstations with 1280x1024 and I want a smaller window. However you can set custom resolution by using `WIDTH` and `HEIGHT` env variables. In future the server side may be upgraded to TigerVNC which allows remote resize.
+The default resolution is 1024x768. This is because I mostly work on workstations with 1280x1024 and I want a smaller window. However you can set custom resolution by using `WIDTH` and `HEIGHT` env variables. The server side runs TigerVNC which allows remote resizing.
 
 ```sh
 docker volume create vncfox
@@ -63,6 +63,15 @@ http://osarchive.org/apps/vnc/tight/ports
 
 - F8  - opens TightVNC menu, clipboard transfer etc
 - F11 - FireFox full screen mode
+
+*Note:* As of TigerVNC Client 1.16.0, the default menu shortcut is Ctrl-Alt-M.
+This can be changed to use other modifier keys as part of the command line
+options with the  -ShortcutModifiers option. It only accepts modifer keys like 
+Ctrl,Shift,Alt,Win/Super. To set it up to use Control-Shift, use the following 
+argument.
+
+
+*-ShortcutModifiers=Ctrl,Shift*
 
 ## Firefox Customization
 

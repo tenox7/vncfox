@@ -1,5 +1,18 @@
 #!/bin/bash
-while true; do
-	pgrep Xtightvnc >/dev/null || { rm -f /tmp/.X0-lock /tmp/.X11-unix/X0; tightvncserver -geometry ${WIDTH}x${HEIGHT} :0; }
-	sleep 10
+
+grep -q "${WIDTH}x${HEIGHT}" /etc/tigervnc/vncserver-config-defaults
+if [[ $? -ne 0 ]];
+then
+  echo "geometry=${WIDTH}x${HEIGHT}" >> /etc/tigervnc/vncserver-config-defaults
+fi
+rm -rf /tmp/.X0-lock /tmp/.X11-unix
+while true
+do
+  pgrep Xvnc >/dev/null
+  if [[ $? -ne 0 ]];
+  then 
+    vncserver :0
+  else
+    sleep 10
+  fi
 done
