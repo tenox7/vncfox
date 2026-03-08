@@ -69,7 +69,7 @@ This can be changed to use other modifier keys as part of the command line
 options with the  -ShortcutModifiers option. It only accepts modifer keys like 
 Ctrl,Shift,Alt,Win/Super. To set it up to use Control-Shift, use the following 
 argument. 
-  *-ShortcutModifiers=Ctrl,Shift*
+  * -ShortcutModifiers=Ctrl,Shift *
 
 ## Firefox Customization
 
