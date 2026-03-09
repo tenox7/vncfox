@@ -64,7 +64,9 @@ http://osarchive.org/apps/vnc/tight/ports
 
 ## Useful keyboard shortcuts
 
-- F8  - opens TightVNC menu, clipboard transfer etc
+- F6  - enters URL input box
+- F8  - opens VNC menu, clipboard transfer etc
+- F10 - opens FireFox Menu
 - F11 - FireFox full screen mode
 
 *Note:* As of TigerVNC Client 1.16.0, the default menu shortcut is Ctrl-Alt-M.
@@ -72,7 +74,6 @@ This can be changed to use other modifier keys as part of the command line
 options with the  -ShortcutModifiers option. It only accepts modifer keys like 
 Ctrl,Shift,Alt,Win/Super. To set it up to use Control-Shift, use the following 
 argument.
-
 
 *-ShortcutModifiers=Ctrl,Shift*
 
