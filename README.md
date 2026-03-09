@@ -39,7 +39,8 @@ I typically bind mount a folder exported via NFS to `/home/vncfox/Downloads`.
 
 ## Resolution
 
-The default resolution is 1024x768. This is because I mostly work on workstations with 1280x1024 and I want a smaller window. However you can set custom resolution by using `WIDTH` and `HEIGHT` env variables. The server side runs TigerVNC which allows remote resizing.
+The default resolution is 1024x768. This is because I mostly work on workstations with 1280x1024 and I want a smaller window. However you can set custom resolution by using `WIDTH` and `HEIGHT` env variables. 
+
 
 ```sh
 docker volume create vncfox
@@ -50,6 +51,8 @@ docker run -d \
     -e WIDTH=1600 -e HEIGHT=1200 \
     tenox7/vncfox:latest
 ```
+
+The server side runs TigerVNC which allows remote resizing. Requires TigerVNC Viewer.
 
 
 ## VNC Client
@@ -80,7 +83,6 @@ Better scrollbars:
 ```text
 about:config
 widget.non-native-theme.scrollbar.style = 1
-widget.gtk.overlay-scrollbars.enabled = false
 layout.testing.overlay-scrollbars.always-visible = true
 ```
 

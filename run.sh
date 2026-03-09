@@ -5,5 +5,5 @@ docker run -d \
   -v vncfox:/home/vncfox/.mozilla \
   -v /Volumes/Tmp:/home/vncfox/Downloads \
   -p 5900:5900 \
-  -e WIDTH=1280 -e HEIGHT=1024 \
+  -e WIDTH=1024 -e HEIGHT=768 \
   tenox7/vncfox:latest

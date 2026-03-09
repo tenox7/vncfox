@@ -1,5 +1,5 @@
 FROM docker.io/alpine
-EXPOSE 5900:5900
+EXPOSE 5900
 RUN apk update 
 # Add in Firefox ESR, Ratpoison (for a minimal VM), and enough fonts to handle
 # nearly all web-based applications. Traditional X11 fonts have been added
