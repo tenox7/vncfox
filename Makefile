@@ -4,5 +4,8 @@ docker-local:
 docker-push:
 	docker buildx build --platform linux/amd64,linux/arm64 -t tenox7/vncfox:latest --push .
 
+push-local:
+	docker push tenox7/vncfox:latest
+
 clean:
 	docker rmi -f tenox7/vncfox:latest
